@@ -1,12 +1,10 @@
 import generateCertificate from "./util/generateCertificate.js";
 import postToTwitter from "./util/postToTwitter.js";
 
-const prAuthor = process.env.GITHUB_ACTOR || "John Doe";
-const prTitle =
-    process.env.PR_TITLE ||
-    "lorum ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem lorem lorem lorendjfisjaifjisajf ijasfijasoi aisjfiasj";
+const prAuthor = process.env.GITHUB_ACTOR;
+const prTitle = process.env.PR_TITLE;
 
-const outCertificatePath = `./image/generatedImage/${prAuthor}-${prTitle.toLowerCase()}.png`;
+const outCertificatePath = `${prAuthor}-${prTitle.toLowerCase()}.png`;
 
 generateCertificate(prAuthor, prTitle, outCertificatePath).then(() =>
     console.log("Certificate generated.")
