@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
     "twitter-api-v2": "^1.17.0"
   }
 }
