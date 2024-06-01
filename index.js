@@ -4,7 +4,7 @@ import postToTwitter from "./util/postToTwitter.js";
 const prAuthor = process.env.GITHUB_ACTOR || "John Doe";
 const prTitle =
     process.env.PR_TITLE ||
-    "lorum sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem lorem lorem lorendjfisjaifjisajf ijasfijasoi aisjfiasj";
+    "lorum aifjie sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem lorem lorem lorendjfisjaifjisajf ijasfijasoi aisjfiasj";
 
 const outCertificatePath = `./image/generatedImage/${prAuthor}-${prTitle.toLowerCase()}.png`;
 
