@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "twitter-api-v2": "^1.17.0"
+  }
+}
