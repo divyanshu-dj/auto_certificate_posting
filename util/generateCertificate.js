@@ -58,6 +58,7 @@ export default async function generateCertificate(
     
         const buffer = canvas.toBuffer("image/png");
         fs.writeFileSync(outCertifictePath, buffer);
+        console.log("Certificate generated.");
     } catch (error) {
         console.log(error);
     }
