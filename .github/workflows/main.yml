@@ -22,7 +22,7 @@ jobs:
       - name: Running Script
         run: node index.js;
         env: 
-          GITHUB_ACTOR: ${{ github.actor }}
+          PR_USER: ${{ github.event.pull_request.user.login }}
           PR_TITLE: ${{ github.event.pull_request.title }}
           TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
