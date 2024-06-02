@@ -10,5 +10,5 @@ const prTitle = process.env.PR_TITLE;
 const outCertificatePath = `${prAuthor}-${prTitle.replace(/\W+/g, '_').toLowerCase()}.png`;
 
 generateCertificate(prAuthor, prTitle, outCertificatePath)
-
-postToTwitter(outCertificatePath, prAuthor, prTitle)
+  .then(() => postToTwitter(outCertificatePath, prAuthor, prTitle))
+  .catch(error => console.error('Error:', error));
