@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const prAuthor = process.env.GITHUB_ACTOR;
+const prAuthor = process.env.PR_USER;
 const prTitle = process.env.PR_TITLE;
 
 const outCertificatePath = `${prAuthor}-${prTitle.replace(/\W+/g, '_').toLowerCase()}.png`;
