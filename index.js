@@ -1,5 +1,8 @@
 import generateCertificate from "./util/generateCertificate.js";
 import postToTwitter from "./util/postToTwitter.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const prAuthor = process.env.GITHUB_ACTOR;
 const prTitle = process.env.PR_TITLE;
