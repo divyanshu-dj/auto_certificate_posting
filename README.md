@@ -1,1 +1,1 @@
-Auto Gen Certificate and post on twitter
+Auto Gen Certificate
